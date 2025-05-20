@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome 6 CDN -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #ffb6ff, #ffcce5, #ffb6ff);
+      background-size: 600% 600%;
+      animation: neonGradient 10s ease infinite;
+    }
+    @keyframes neonGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .card {
+      width: 300px;
+      height: 460px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(255, 182, 255, 0.7);
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 182, 255, 0.8);
+      box-shadow: 0 0 15px rgba(255, 182, 255, 0.7);
+    }
+    .profile-name {
+      font-family: 'Cherry Bomb One', cursive;
+      font-size: 2.5rem;
+      user-select: none;
+    }
+    .social-icons {
+      display: flex;
+      gap: 25px;
+      margin-top: 10px;
+    }
+    .social-icons a {
+      color: #ff66cc; /* bright pink */
+      font-size: 2rem;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .social-icons a:hover {
+      color: #ff33aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img
+      src="https://cdn.discordapp.com/avatars/972166058809122866/2d261a5b5a2aa1100983c26bc2ee20ba.png?size=1024"
+      alt="Profile Icon"
+      class="profile-img"
+    />
+    <div class="profile-name">Sheemu</div>
+    <div class="social-icons">
+      <a href="https://discord.com/users/1355328982177812542" target="_blank" aria-label="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.youtube.com/@SchmuSaurusRex" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://open.spotify.com/user/312tph6x5wlrknkqgb2d2zv6p5uu" target="_blank" aria-label="Spotify">
+        <i class="fab fa-spotify"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
